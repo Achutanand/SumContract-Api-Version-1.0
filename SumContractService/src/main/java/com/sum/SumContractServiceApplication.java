@@ -7,7 +7,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @SpringBootApplication
 /*
  * Access the URL to TRY OUT the EndPoints :
- * http://localhost:8888/swagger-ui.html#/sum-contract-controller
+ * http://localhost:8888/swagger-ui.html#
  */
 public class SumContractServiceApplication {
 
