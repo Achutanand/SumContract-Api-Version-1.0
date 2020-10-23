@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "ceb959e5-9852-4da1-a753-4667464fb866",
+		"name": "Sum-Total-Api-Version-1.0-Endpoints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Promting the Service to Provide Question.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888/api/getMessage",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"api",
+						"getMessage"
+					]
+				},
+				"description": "Promting the Service to Provide Question with Numbers to Add."
+			},
+			"response": []
+		},
+		{
+			"name": "Get the Question from the Server",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888/api/getQuestion",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"api",
+						"getQuestion"
+					]
+				},
+				"description": "Get the Question from the Server"
+			},
+			"response": []
+		},
+		{
+			"name": "Execute to Get the Response from the Server With a Wrong Sum Value",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888/api/execute?values=124, 161, 311, 329, 1, 65, 61, 34, 317, 115&sumTotal=25",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"api",
+						"execute"
+					],
+					"query": [
+						{
+							"key": "values",
+							"value": "124, 161, 311, 329, 1, 65, 61, 34, 317, 115"
+						},
+						{
+							"key": "sumTotal",
+							"value": "25"
+						}
+					]
+				},
+				"description": "Execute to Get the Response from the Server by Providing the values and the Invalid totalSum as an Input to Validate and get the Response promting the User that it Entered Wrong Value."
+			},
+			"response": []
+		},
+		{
+			"name": "Execute to Get the Response from the Server With a Correct Sum Value",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888/api/execute?values=124, 161, 311, 329, 1, 65, 61, 34, 317, 115&sumTotal=1518",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"api",
+						"execute"
+					],
+					"query": [
+						{
+							"key": "values",
+							"value": "124, 161, 311, 329, 1, 65, 61, 34, 317, 115"
+						},
+						{
+							"key": "sumTotal",
+							"value": "1518"
+						}
+					]
+				},
+				"description": "Providing the Correct Sum as an Input."
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
